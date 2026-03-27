@@ -28,7 +28,9 @@ app.use("/favourites", favouriteRouter);
 app.use("/properties", propertyRouter);
 
 app.get("/", (req, res) => {
-  res.render("Hello ");
+  res.status(200).json({
+    message: "TechKraft API is running",
+  });
 });
 
 app.use(function (req, res, next) {
@@ -37,11 +39,11 @@ app.use(function (req, res, next) {
 
 // error handler
 app.use(function (err, req, res, next) {
-  res.locals.message = err.message;
-  res.locals.error = req.app.get("env") === "development" ? err : {};
-
-  res.status(err.status || 500);
-  res.render("error");
+  const status = err.status || 500;
+  res.status(status).json({
+    success: false,
+    message: err.message || "Internal server error",
+  });
 });
 
 module.exports = app;
