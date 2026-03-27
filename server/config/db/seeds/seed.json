@@ -1,0 +1,68 @@
+{
+  "properties": [
+    {
+      "title": "Modern 2BHK Apartment",
+      "description": "Bright apartment with open kitchen and balcony.",
+      "price": 85000.0,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "location": "Kathmandu, Nepal"
+    },
+    {
+      "title": "Cozy Studio Near City Center",
+      "description": "Compact studio ideal for students and professionals.",
+      "price": 35000.0,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "location": "Lalitpur, Nepal"
+    },
+    {
+      "title": "Family Home with Garden",
+      "description": "Spacious home with private garden and parking.",
+      "price": 150000.0,
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "location": "Bhaktapur, Nepal"
+    },
+    {
+      "title": "Luxury Penthouse",
+      "description": "Top-floor penthouse with city views and terrace.",
+      "price": 320000.0,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "location": "Kathmandu, Nepal"
+    },
+    {
+      "title": "Affordable 3BHK Flat",
+      "description": "Practical layout, close to schools and shops.",
+      "price": 95000.0,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "location": "Pokhara, Nepal"
+    },
+    {
+      "title": "Quiet Suburban House",
+      "description": "Peaceful neighborhood with easy highway access.",
+      "price": 175000.0,
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "location": "Chitwan, Nepal"
+    },
+    {
+      "title": "Minimal 1BHK Apartment",
+      "description": "Low-maintenance unit with good natural light.",
+      "price": 48000.0,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "location": "Lalitpur, Nepal"
+    },
+    {
+      "title": "Townhouse with Rooftop",
+      "description": "Modern townhouse featuring a rooftop sitting area.",
+      "price": 210000.0,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "location": "Biratnagar, Nepal"
+    }
+  ]
+}

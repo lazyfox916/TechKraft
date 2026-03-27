@@ -1,0 +1,18 @@
+POST http://localhost:9000/users/signup
+Content-Type: application/json
+
+{
+    "fullname":"Aaryan Sharma",
+    "email":"lazyfox916@gmail.com",
+    "password":"password123"
+}
+
+###
+
+POST http://localhost:9000/users/signin
+Content-Type: application/json
+
+{
+    "email":"lazyfox916@gmail.com",
+    "password":"password123"
+}

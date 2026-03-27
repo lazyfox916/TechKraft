@@ -1,0 +1,11 @@
+POST http://localhost:9000/favourites/add
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMwNTliZWQwLTI3YjEtNGE2MC1hZDFmLTVkNjNlOTE4MzU0NyIsInVzZXIiOiJBYXJ5YW4gU2hhcm1hIiwicm9sZSI6IlVzZXIiLCJpYXQiOjE3NzQ1ODc0NzIsImV4cCI6MTc3NTE5MjI3Mn0._Aq4ZxDoEeTPVm-82SZtw-Ovyfhe0QJdndTTrqSkg0Y
+
+{
+    "propertyId": "1c96f44d-8997-4340-b9da-ec1dc1f7c17e"
+}
+
+###
+GET http://localhost:9000/favourites/all
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMwNTliZWQwLTI3YjEtNGE2MC1hZDFmLTVkNjNlOTE4MzU0NyIsInVzZXIiOiJBYXJ5YW4gU2hhcm1hIiwicm9sZSI6IlVzZXIiLCJpYXQiOjE3NzQ1ODc0NzIsImV4cCI6MTc3NTE5MjI3Mn0._Aq4ZxDoEeTPVm-82SZtw-Ovyfhe0QJdndTTrqSkg0Y
