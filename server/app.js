@@ -5,7 +5,6 @@ const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const cors = require("cors");
 
-const indexRouter = require("./src/routes/index");
 const usersRouter = require("./src/routes/users.route");
 const favouriteRouter = require("./src/routes/favourite.route");
 const propertyRouter = require("./src/routes/properties.route");
@@ -14,9 +13,6 @@ const { testPostgresConnection } = require("./config/db/connectDB");
 require("./src/models");
 
 const app = express();
-
-app.set("views", path.join(__dirname, "./src/views"));
-app.set("view engine", "jade");
 
 app.use(logger("dev"));
 app.use(express.json());
@@ -27,10 +23,13 @@ app.use(cors({ origin: "*" }));
 
 testPostgresConnection();
 
-app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/favourites", favouriteRouter);
 app.use("/properties", propertyRouter);
+
+app.get("/", (req, res) => {
+  res.render("Hello ");
+});
 
 app.use(function (req, res, next) {
   next(createError(404));
